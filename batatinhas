@@ -1,0 +1,102 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace batatinhas
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           
+
+            int numero;
+
+            Console.WriteLine("Olá, por favor, digite um número abaixo:");
+            numero = int.Parse(Console.ReadLine());
+            if (numero > 100)
+            {
+                Console.WriteLine($"O valor digitado é {numero + 150}");
+            }
+            else
+            {
+                Console.WriteLine($"O valor digitado foi: {numero}");
+            }
+            Console.ReadKey();
+            Console.WriteLine("---------------------------------------------------------------------");
+
+            double nota_um;
+            double nota_dois;
+
+            Console.WriteLine("Digite a primeira nota do aluno");
+            nota_um = double.Parse(Console.ReadLine());
+
+
+            Console.WriteLine("Perfeito! Agora digite a segunda nota:");
+            nota_dois = double.Parse(Console.ReadLine());
+
+            Console.WriteLine($"A média do aluno é { (nota_um + nota_dois) / 2}");
+
+            if (nota_um + nota_dois / 2 == 6.0)
+            {
+                Console.WriteLine("A média é igual a média mínima.");
+            }
+            if (nota_um + nota_dois / 2 < 6.0)
+            {
+                Console.WriteLine("Média inferior a média mínima.");
+            }
+            if (nota_um + nota_dois / 2 > 6.0)
+            {
+                Console.WriteLine("Parabéns, a nota é superior a média minima.");
+            }
+            Console.ReadKey();
+            
+
+            Console.WriteLine("------------------------------------------------");
+
+            double notinha_um;
+            double notinha_dois;
+            double notinha_tres;
+
+            Console.WriteLine("Digite a primeira nota do aluno:");
+          notinha_um = double.Parse(Console.ReadLine());
+            Console.WriteLine("Digite a segunda nota do aluno:");
+         notinha_dois = double.Parse(Console.ReadLine());
+            Console.WriteLine("Digite a terceira nota do aluno:");
+         notinha_tres = double.Parse(Console.ReadLine());
+
+            if (notinha_um > notinha_dois && nota_um > notinha_tres )
+            {
+                Console.WriteLine($"A maior nota é {notinha_um}");
+
+
+            }
+            if (notinha_dois > notinha_um && notinha_dois > notinha_tres )
+            {
+                Console.WriteLine($"A maior nota é {notinha_dois}");
+
+
+            }
+            if (notinha_tres > notinha_um && notinha_tres > notinha_dois)
+            {
+                Console.WriteLine($"A maior nota é {notinha_tres}");
+
+            }
+
+            Console.ReadKey();
+
+            Console.WriteLine("--------------------------------------------------");
+
+        }
+
+       
+
+
+
+    }
+
+
+
+}
